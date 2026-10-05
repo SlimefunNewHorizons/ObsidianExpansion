@@ -43,7 +43,7 @@ DrakesCraft.
 [InfinityLib](https://github.com/Mooy1/InfinityLib), un framework de addons compilado contra los
 paquetes de Slimefun de upstream, que en nuestro core no existen. En vez de reescribir las diez
 clases que la usan, portamos la librería entera: está en
-[`DrakesCraft-Labs/InfinityLib-Drake`](https://github.com/DrakesCraft-Labs/InfinityLib-Drake).
+[`SlimefunNewHorizons/InfinityLib-Drake`](https://github.com/SlimefunNewHorizons/InfinityLib-Drake).
 Con eso se desbloquearon también SlimefunWarfare y MagicXpansion.
 
 **PaperLib fuera.** Se usaba para una sola llamada, `getBlockState(b, false)`, que en Paper 1.21.11
@@ -72,7 +72,7 @@ procedencia están en [UPSTREAM.md](UPSTREAM.md).
 
 ## 📄 License & Upstream Attribution
 
-This project is a sovereign fork maintained by [**JackStar6677-1**](https://github.com/JackStar6677-1) under [**DrakesCraft Labs**](https://github.com/DrakesCraft-Labs).
+This project is a sovereign fork maintained by [**JackStar6677-1**](https://github.com/JackStar6677-1) under [**DrakesCraft Labs**](https://github.com/SlimefunNewHorizons).
 
 - **Original Project:** Created by the upstream authors and the open-source community.
 - **DrakesCraft Optimizations:** Modernized for Paper/Purpur 1.21.11+, Java 21, high concurrency, asynchronous safety, and exploit/duplication prevention.
