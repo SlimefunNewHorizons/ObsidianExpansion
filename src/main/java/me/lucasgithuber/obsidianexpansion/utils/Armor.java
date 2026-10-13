@@ -1,6 +1,6 @@
 package me.lucasgithuber.obsidianexpansion.utils;
 
-import io.github.mooy1.infinitylib.common.Scheduler;
+import dev.drake.infinitylib.common.Scheduler;
 import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
 import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
 import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
@@ -24,7 +24,7 @@ import javax.annotation.Nonnull;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.logging.Level;
 
-import static io.github.mooy1.infinitylib.core.AbstractAddon.log;
+import static dev.drake.infinitylib.core.AbstractAddon.log;
 
 
 public final class Armor extends SlimefunArmorPiece implements ProtectiveArmor, Soulbound, NotPlaceable {

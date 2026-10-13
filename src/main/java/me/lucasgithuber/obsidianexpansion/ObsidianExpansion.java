@@ -1,7 +1,7 @@
 package me.lucasgithuber.obsidianexpansion;
 
 
-import io.github.mooy1.infinitylib.core.AbstractAddon;
+import dev.drake.infinitylib.core.AbstractAddon;
 import com.github.drakescraft_labs.slimefun4.api.SlimefunAddon;
 import me.lucasgithuber.obsidianexpansion.utils.CustomArmorTask;
 import net.kyori.adventure.text.minimessage.MiniMessage;

@@ -1,7 +1,7 @@
 package me.lucasgithuber.obsidianexpansion.machines;
 
-import io.github.mooy1.infinitylib.machines.MachineLayout;
-import io.github.mooy1.infinitylib.machines.MachineRecipeType;
+import dev.drake.infinitylib.machines.MachineLayout;
+import dev.drake.infinitylib.machines.MachineRecipeType;
 import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
 import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
 import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
@@ -23,7 +23,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 @ParametersAreNonnullByDefault
-public final class ObsidianForge extends io.github.mooy1.infinitylib.machines.CraftingBlock implements EnergyNetComponent {
+public final class ObsidianForge extends dev.drake.infinitylib.machines.CraftingBlock implements EnergyNetComponent {
 
     public static final int[] INPUT_SLOTS = {
             0, 1, 2, 3, 4, 5,
@@ -43,7 +43,7 @@ public final class ObsidianForge extends io.github.mooy1.infinitylib.machines.Cr
     public ObsidianForge(ItemGroup category, SlimefunItemStack item, RecipeType type, ItemStack[] recipe, int energy) {
         super(category, item, type, recipe);
         addRecipesFrom(TYPE);
-        layout(new MachineLayout()
+        this.layout = (new MachineLayout()
                 .inputSlots(INPUT_SLOTS)
                 .outputSlots(new int[]{
                         53

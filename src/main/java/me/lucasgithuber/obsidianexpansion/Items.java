@@ -1,7 +1,7 @@
 package me.lucasgithuber.obsidianexpansion;
 
 import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
-import io.github.mooy1.infinitylib.machines.MachineLore;
+import dev.drake.infinitylib.machines.MachineLore;
 import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItem;
 import com.github.drakescraft_labs.slimefun4.api.items.SlimefunItemStack;
 import com.github.drakescraft_labs.slimefun4.api.recipes.RecipeType;
