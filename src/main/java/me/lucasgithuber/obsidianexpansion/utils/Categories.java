@@ -2,8 +2,8 @@ package me.lucasgithuber.obsidianexpansion.utils;
 
 import dev.drake.infinitylib.groups.MultiGroup;
 import dev.drake.infinitylib.groups.SubGroup;
-import com.github.drakescraft_labs.slimefun4.api.items.ItemGroup;
-import com.github.drakescraft_labs.slimefun4.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import lombok.experimental.UtilityClass;
 import me.lucasgithuber.obsidianexpansion.ObsidianExpansion;
 import net.kyori.adventure.platform.bukkit.BukkitComponentSerializer;
