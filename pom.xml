@@ -73,7 +73,7 @@
                             <version>${lombok.version}</version>
                         </path>
                     </annotationProcessorPaths>
-                    <release>21</release>
+                    <release>25</release>
                 </configuration>
             </plugin>
             <plugin>
@@ -159,8 +159,8 @@
         </dependency>
         <dependency>
             <groupId>net.kyori</groupId>
-            <artifactId>adventure-platform-bukkit</artifactId>
-            <version>4.1.0</version>
+            <artifactId>adventure-text-serializer-legacy</artifactId>
+            <version>4.17.0</version>
             <scope>compile</scope>
         </dependency>
 

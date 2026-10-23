@@ -6,7 +6,7 @@ import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import lombok.experimental.UtilityClass;
 import me.lucasgithuber.obsidianexpansion.ObsidianExpansion;
-import net.kyori.adventure.platform.bukkit.BukkitComponentSerializer;
+import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
@@ -16,36 +16,36 @@ public class Categories {
 
     public static final ItemGroup OMC_RESOURCES = new SubGroup(
             "omc_resources",
-            new CustomItemStack(new ItemStack(Material.OBSIDIAN), BukkitComponentSerializer.legacy().serialize
+            new CustomItemStack(new ItemStack(Material.OBSIDIAN), LegacyComponentSerializer.legacySection().serialize
                     (ObsidianExpansion.MM.deserialize("<gradient:#8100D1:#D320FC>Recursos</gradient>")))
     );
     public static final ItemGroup OMC_ITEMS = new SubGroup(
             "omc_items",
-            new CustomItemStack(new ItemStack(Material.NETHERITE_INGOT), BukkitComponentSerializer.legacy().serialize
+            new CustomItemStack(new ItemStack(Material.NETHERITE_INGOT), LegacyComponentSerializer.legacySection().serialize
                     (ObsidianExpansion.MM.deserialize("<gradient:#8100D1:#D320FC>Objetos</gradient>")))
     );
     public static final ItemGroup OMC_MACHINES = new SubGroup(
             "omc_machines",
-            new CustomItemStack(new ItemStack(Material.CHISELED_POLISHED_BLACKSTONE), BukkitComponentSerializer.legacy().serialize
+            new CustomItemStack(new ItemStack(Material.CHISELED_POLISHED_BLACKSTONE), LegacyComponentSerializer.legacySection().serialize
                     (ObsidianExpansion.MM.deserialize("<gradient:#8100D1:#D320FC>Máquinas</gradient>")))
     );
     public static final ItemGroup OMC_GENERATORS = new SubGroup(
             "omc_generators",
-            new CustomItemStack(new ItemStack(Material.BLACKSTONE_WALL), BukkitComponentSerializer.legacy().serialize
+            new CustomItemStack(new ItemStack(Material.BLACKSTONE_WALL), LegacyComponentSerializer.legacySection().serialize
                     (ObsidianExpansion.MM.deserialize("<gradient:#8100D1:#D320FC>Generadores de Material</gradient>")))
     );
     public static final ItemGroup OMC_DROPS = new SubGroup(
             "omc_drops",
-            new CustomItemStack(new ItemStack(Material.NETHERITE_SWORD), BukkitComponentSerializer.legacy().serialize
+            new CustomItemStack(new ItemStack(Material.NETHERITE_SWORD), LegacyComponentSerializer.legacySection().serialize
                     (ObsidianExpansion.MM.deserialize("<gradient:#8100D1:#D320FC>Botín de Criaturas</gradient>")))
     );
     public static final ItemGroup OMC_FORGE_GROUP = new ObsidianForgeGroup(
             ObsidianExpansion.createKey("junction_category"),
-            new CustomItemStack(Material.SMITHING_TABLE, BukkitComponentSerializer.legacy().serialize
+            new CustomItemStack(Material.SMITHING_TABLE, LegacyComponentSerializer.legacySection().serialize
                     (ObsidianExpansion.MM.deserialize("<gradient:#8100D1:#D320FC>Forja</gradient>"))),3);
     public static final ItemGroup OMC_MAIN = new MultiGroup(
             "omc_expansion",
-            new CustomItemStack(Material.CRYING_OBSIDIAN, BukkitComponentSerializer.legacy().serialize
+            new CustomItemStack(Material.CRYING_OBSIDIAN, LegacyComponentSerializer.legacySection().serialize
                     (ObsidianExpansion.MM.deserialize("<gradient:#8100D1:#D320FC>Tecnología de Obsidiana</gradient>"))),
             OMC_RESOURCES, OMC_ITEMS, OMC_MACHINES, OMC_GENERATORS, OMC_DROPS, OMC_FORGE_GROUP
     );
