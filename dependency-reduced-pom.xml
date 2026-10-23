@@ -44,19 +44,11 @@
           </execution>
         </executions>
         <configuration>
-          <minimizeJar>true</minimizeJar>
+          <minimizeJar>false</minimizeJar>
           <relocations>
             <relocation>
               <pattern>dev.drake.infinitylib</pattern>
               <shadedPattern>me.lucasgithuber.obsidianexpansion.infinitylib</shadedPattern>
-            </relocation>
-            <relocation>
-              <pattern>net.kyori.adventure-text-minimessage</pattern>
-              <shadedPattern>me.lucasgithuber.elementmanipulation.adventure-text-minimessage</shadedPattern>
-            </relocation>
-            <relocation>
-              <pattern>net.kyori.adventure-platform-bukkit</pattern>
-              <shadedPattern>me.lucasgithuber.elementmanipulation.adventure-platform-bukkit</shadedPattern>
             </relocation>
           </relocations>
           <filters>
@@ -134,7 +126,7 @@
   <properties>
     <lombok.version>1.18.48</lombok.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.target>21</maven.compiler.target>
-    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>25</maven.compiler.target>
+    <maven.compiler.source>25</maven.compiler.source>
   </properties>
 </project>
