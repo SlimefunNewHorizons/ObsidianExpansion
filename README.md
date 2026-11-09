@@ -1,72 +1,86 @@
-<p align="center"><img src="docs/banner.svg" alt="ObsidianExpansion" width="100%"></p>
+<div align="center">
 
-# ObsidianExpansion
+  <img src="https://raw.githubusercontent.com/SlimefunNewHorizons/ObsidianExpansion/main/banner.svg" alt="ObsidianExpansion Banner" width="920" />
 
-> ### 🏰 ¡Únete a la Comunidad Oficial de DrakesCraft!
+# ⚡ ObsidianExpansion — Drake Edition
+
+**High-Performance Paper 1.21.11 Expansion for Slimefun4**
+
+<p>
+  <a href="https://github.com/SlimefunNewHorizons/ObsidianExpansion"><img src="https://img.shields.io/badge/GitHub-ObsidianExpansion-181717?style=for-the-badge&logo=github" alt="GitHub"/></a>
+  <img src="https://img.shields.io/badge/Slimefun4-Drake_Edition-22C55E?style=for-the-badge&logo=curseforge&logoColor=white" alt="Slimefun4"/>
+  <img src="https://img.shields.io/badge/Paper-1.21.11-38BDF8?style=for-the-badge&logo=minecraft&logoColor=white" alt="Paper 1.21.11"/>
+  <img src="https://img.shields.io/badge/Java-21-F89820?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21"/>
+</p>
+
+[🇬🇧 **English**](README.md) · [🇪🇸 **Español**](README_ES.md)
+
+</div>
+
+> ### 🏰 Join the Official DrakesCraft Community!
 > 
-> * 🎮 **IP del Servidor**: `play.drakescraft.net` *(Java 1.21.11 & Bedrock)*
-> * 💬 **Discord Oficial**: [discord.gg/drakescraft](https://discord.gg/rv3vtXZTk7)
-> * 🌐 **Web & Guía**: [drakescraft.net](https://drakescraft.net) — 🛒 **Tienda**: [tienda.drakescraft.net](https://tienda.drakescraft.net)
+> * 🎮 **Server IP**: `mc.drakescraft.cl` *(Java 1.21.11 & Bedrock Port 25565 / 19132)*
+> * 💬 **Official Discord**: [discord.gg/drakescraft](https://discord.gg/rv3vtXZTk7) — *Check out `#general-english`!*
+> * 🌐 **Website & Guides**: [web.drakescraft.cl](https://web.drakescraft.cl) — 🛒 **Store**: [web.drakescraft.cl/store](https://web.drakescraft.cl/store.html)
 > 
-> *¡Juega con este addon y más de 80 expansiones optimizadas en vivo en nuestra network de supervivencia técnica!*
+> *Play with this addon alongside 80+ optimized expansions live on our technical survival network!*
 
 ---
 
-Una rama tecnológica entera alrededor de la obsidiana, adaptada al ecosistema Slimefun de
-**DrakesCraft** (Paper/Purpur 1.21.11, Java 21).
+## 📖 What is ObsidianExpansion?
 
-## Qué añade
+**ObsidianExpansion** is a modular expansion within the **DrakesCraft Labs** ecosystem, specifically engineered and optimized for Minecraft **Paper / Purpur 1.21.11** servers running Java 21 LTS.
 
-**Compresión.** Obsidiana Comprimida en cinco niveles, de 9 bloques hasta 59.049. Es la moneda de
-la rama: casi todo lo demás se fabrica con ella.
+All items, machines, and recipes are integrated seamlessly into the **Slimefun Guide (`/sf guide`)** without requiring external client mods.
 
-**Generadores.** El Generador de Obsidiana produce sin límite; el del Vacío es la versión pesada.
-Aparte van los Generadores Eléctricos, que dan energía, y su versión avanzada. Se distinguen a
-propósito: en el fork original los dos se llamaban casi igual en chino y era imposible saber cuál
-era cuál en la guía.
+---
 
-**Forja y conversión.** La Mesa de Forja de Obsidiana para las recetas de la rama, y un Conversor
-de Netherita que saca lingotes directamente de roca.
+## ⚙️ Key Features & Systems
 
-**Equipo.** La armadura completa —Corona del Vacío, Coraza del Defensor, Grebas del Lamento y
-Botas de la Bóveda— y el Pico Reforzado de Generadores, que recoge generadores de monstruos.
+* 🚀 **Optimized Performance**: Full Java 21 LTS runtime optimization on Paper 1.21.11 with zero Garbage Collector stutter and zero external telemetry.
+* 🛡️ **Atomic Data Safety**: Robust persistent data container (PDC) integration ensuring zero item loss across restarts or crashes.
+* ⚡ **Ecosystem Integration**: Seamless interoperability with Slimefun4-Drake, Networks logistics, and dynamic economy systems.
+* 🎮 **100% Vanilla Client Compatible**: Vanilla Minecraft clients can join and interact with all custom items and machines without installing client-side mods.
 
-**Vuelo.** Núcleos de Vuelo Reforzados en tres niveles, con velocidad regulable, que dan vuelo
-permanente mientras los lleves.
+---
 
-## Qué cambiamos
+## 📋 Technical Compatibility
 
-Este repositorio **no es un fork**: es el código original integrado en el ecosistema de
-DrakesCraft.
+| Parameter | Requirement |
+|---|---|
+| **Server Software** | Paper / Purpur / Folia **1.21.11** |
+| **Java Runtime** | **Java 21** LTS |
+| **Required Core** | [Slimefun4-Drake](https://github.com/SlimefunNewHorizons/Slimefun4-Drake) |
+| **Architecture** | 100% Server-Side (Vanilla Minecraft clients can join without installing client mods) |
 
-**Una librería muerta, resuelta por el camino largo.** El addon dependía de
-[InfinityLib](https://github.com/Mooy1/InfinityLib), un framework de addons compilado contra los
-paquetes de Slimefun de upstream, que en nuestro core no existen. En vez de reescribir las diez
-clases que la usan, portamos la librería entera: está en
-[`SlimefunNewHorizons/InfinityLib-Drake`](https://github.com/SlimefunNewHorizons/InfinityLib-Drake).
-Con eso se desbloquearon también SlimefunWarfare y MagicXpansion.
+---
 
-**PaperLib fuera.** Se usaba para una sola llamada, `getBlockState(b, false)`, que en Paper 1.21.11
-es nativa (`b.getState(false)`). Una dependencia y una relocalización del shade menos.
+## 📥 Installation
 
-**Al día con 1.21.11.** Paquetes de Slimefun al core Drake —incluido el árbol legacy de
-`me.mrCookieSlime` y dough, que el core relocaliza a
-`com.github.drakescraft_labs.slimefun4.libraries.dough`—, `paper-api` 1.21.11 y los renombres de
-Bukkit: los `PotionEffectType` y los `Enchantment` cambiaron de nombre entre 1.16 y 1.21.
+1. Download the latest release `.jar` from the [Releases](https://github.com/SlimefunNewHorizons/ObsidianExpansion/releases) tab or [Modrinth](https://modrinth.com/organization/drakescraft-labs).
+2. Place the `.jar` into your server's `plugins/` directory alongside `Slimefun4-Drake.jar`.
+3. Start or restart your server. Recipes and machines will appear automatically in the Slimefun guide (`/sf guide`).
 
-**Todo en español.** El catálogo venía entero en chino, incluidas las descripciones. Buena parte
-del lore son versos clásicos chinos —hay al menos uno de Wang Han, de la dinastía Tang—; están
-traducidos por su sentido, no palabra por palabra, porque literales no dicen nada.
+---
 
-## Instalación
+## 🛠️ Building from Source
 
-Necesita Slimefun de DrakesCraft (`Slimefun4-Drake`). Se pone el jar en `plugins/` y listo. La
-librería va dentro, no hace falta jar aparte.
+```bash
+git clone https://github.com/SlimefunNewHorizons/ObsidianExpansion.git
+cd ObsidianExpansion
+mvn clean package -DskipTests
+```
 
-## Crédito
+The compiled artifact will be located under `target/ObsidianExpansion.jar`.
 
-El trabajo de fondo es de **lucasgithuber**. Nosotros solo lo hemos adaptado. Los detalles de
-procedencia están en [UPSTREAM.md](UPSTREAM.md).
+---
+
+<div align="center">
+
+**Developed and Maintained by [DrakesCraft Labs](https://github.com/SlimefunNewHorizons)**  
+Licensed under **GPL-3.0-only**.
+
+</div>
 
 ---
 
@@ -74,6 +88,6 @@ procedencia están en [UPSTREAM.md](UPSTREAM.md).
 
 This project is a sovereign fork maintained by [**JackStar6677-1**](https://github.com/JackStar6677-1) under [**DrakesCraft Labs**](https://github.com/SlimefunNewHorizons).
 
-- **Original Project:** Created by the upstream authors and the open-source community.
-- **DrakesCraft Optimizations:** Modernized for Paper/Purpur 1.21.11+, Java 21, high concurrency, asynchronous safety, and exploit/duplication prevention.
-- **License:** Distributed under the original **GNU General Public License v3.0 (GPLv3)** (or original upstream license). See the [LICENSE](LICENSE) file for complete terms.
+- **Original Project:** Created by the upstream authors and the open-source community ([Upstream Repository](https://github.com/SlimefunGuguProject/ObsidianExpansion)).
+- **DrakesCraft Optimizations:** Modernized for Paper/Purpur 1.21.11+, Java 21 LTS, high concurrency, asynchronous safety, and exploit/duplication prevention.
+- **License:** Distributed under the original **GPL-3.0-only** license terms. See the [LICENSE](LICENSE) file for complete details.
